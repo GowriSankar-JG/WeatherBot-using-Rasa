@@ -8,7 +8,8 @@ Please refer: https://rasa.com/docs/rasa/user-guide/installation/
 This chatbot uses API from https://openweathermap.org/api
 It is free and very easy to use.
 
-In command prompt:
+
+## In command prompt:
 
 > rasa run actions
 
