@@ -23,11 +23,9 @@ class ActionHelloWorld(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # city=tracker.latest_message['text']
         city = tracker.get_slot('location')
         temperature=Weather(city)['temp']
         response = "The current temperature at {} is {} degree Celsius.".format(city,temperature)
-        # dispatcher.utter_template("utter_temp",tracker,temp=temp,city=city)
         dispatcher.utter_message(response)
 
         return [SlotSet('location',city)]
