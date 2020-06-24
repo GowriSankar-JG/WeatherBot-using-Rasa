@@ -11,9 +11,13 @@ It is free and very easy to use.
 
 ## In command prompt:
 
+1) Train the chatbot with the stories.
+> rasa train
+
+2) Run the API and connect it with our chatbot.
 > rasa run actions
 
-and then
+3) To initiate and run the chatbot and conversate in UI.
 
 > rasa run -m models --enable-api --cors "*" --debug
 
