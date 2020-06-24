@@ -1,0 +1,41 @@
+intents:
+- greet
+- goodbye
+- bot_challenge
+- weather
+- city
+- inform
+- inquire
+
+entities:
+- location
+
+slots:
+  location:
+    type: text
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- action_weather
+- utter_ask_location
+
+responses:
+  utter_greet:
+  - text: Hey! How may i assist you?
+  - text: What I can do for you today?
+  - text: Hi, there !!
+  - text: Nice to meet you.
+  utter_goodbye:
+  - text: Bye
+  - text: Talk to you later.
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_location:
+  - text: which city you want to check for?
+  - text: In what location?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
