@@ -1,7 +1,7 @@
 # WeatherBot-using-Rasa
 This is an assistant bot that can help you tell the weather for any city.
 
-To run this model create a conda environment with rasa.
+To run this model create a conda environment with rasa. \n
 Please refer: https://rasa.com/docs/rasa/user-guide/installation/ 
 
 This chatbot uses API from https://openweathermap.org/api
